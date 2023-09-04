@@ -1,0 +1,4 @@
+.env
+.vscode
+test.json
+__pycache__
