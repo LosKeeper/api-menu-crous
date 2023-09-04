@@ -2,3 +2,4 @@ beautifulsoup4
 certifi
 pycurl
 flask
+python-dotenv
