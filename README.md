@@ -7,7 +7,7 @@
 [![Python Version](https://img.shields.io/pypi/pyversions/discord-py-interactions)](https://www.python.org/downloads/)
 
 [![Author](https://img.shields.io/badge/author-@LosKeeper-blue)](https://github.com/LosKeeper)
-> This bot is used to create an API for many Crous restaurants in Strasbourg.
+> This app is used to create an API for many Crous restaurants in Strasbourg.
 
 ## 🧾 Table of Contents
 1. [🐋 Docker](#-docker)
