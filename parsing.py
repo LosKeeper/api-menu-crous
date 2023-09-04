@@ -2,7 +2,6 @@ import pycurl
 import certifi
 from io import BytesIO
 
-import json
 from bs4 import BeautifulSoup
 
 
@@ -116,6 +115,51 @@ def parserCronenbourg(htmlStr):
                 # Add the menu to the JSON object inside all the <li> tag
                 for li2 in li.find_all('li'):
                     menu[cur_menu][pole].append(li2.text.replace('\'', ' '))
+
+        menus.append(menu)
+        i += 1
+
+    return menus
+
+
+def parserPaulAppell(htmlStr):
+
+    menus = []
+
+    soup = BeautifulSoup(htmlStr, 'html.parser')
+
+    # Use to count the number of menu to parse the meal_foodies
+    i = 0
+
+    # Get all the menu for each day
+    for time in soup.find_all('time', class_='menu_date_title'):
+        # Create a new JSON object for each day
+        menu = {
+            "date": time.text
+        }
+
+        for meal_type in soup.find_all('div', class_='meal_title'):
+
+            cur_menu = meal_type.text
+
+            menu[cur_menu] = {}
+
+            # Parse the menu the day
+            uls = soup.find_all('ul', class_='meal_foodies')
+
+            # For each <li> tag
+            for li in uls[i].find_all('li'):
+                # Get only the student menu wich start with "SALLE DES ETUDIANTS"
+                if li.text.startswith('Pôle végétal') or li.text.startswith('Flam and Co') or li.text.startswith('Plat du jour') or li.text.startswith('Annexe'):
+                    # Get the name of the pole before the <ul> tag
+                    pole = str(li).split('<ul')[0].split('>')[1]
+                    menu[cur_menu][pole] = []
+
+                    # Add the menu to the JSON object inside all the <li> tag
+                    for li2 in li.find_all('li'):
+                        if li2.text != 'OU':
+                            menu[cur_menu][pole].append(
+                                li2.text.replace('\'', ' '))
 
         menus.append(menu)
         i += 1

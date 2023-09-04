@@ -2,220 +2,108 @@
     {
         "date": "Menu du lundi 4 septembre 2023",
         "Déjeuner": {
-            "Grillade": [
-                "FILET DE COLIN PANÉ",
-                "SAUCE COCKTAIL",
-                "CAROTTES SYLVESTRE",
-                "POMMES DUCHESSE"
+            "ENTREES": [
+                "Crudités et hors d’œuvres variés",
+                "Salade coleslow"
             ],
-            "Plat du jour": [
-                "ÉMINCÉ DE VOLAILLE À LA CRÈME",
-                "BLÉSOTTO"
+            "MENU DU JOUR": [
+                "Chili con Carné - Riz"
             ],
-            "Végétarien": [
-                "TAGLIATELLES AUX 3 FROMAGES",
-                "ET BROCOLIS"
+            "MENU VEGETARIEN": [
+                "Aiguillettes de blé",
+                "Céréales aux petits légumes"
             ],
-            "Extension": [
-                "menu non communiqué"
+            "POLE PATES": [
+                "Torti tricolore à la dinde et fenouil"
+            ],
+            "GRILL": [
+                "Cordon bleu de dinde - frites"
+            ],
+            "DESSERTS": [
+                "Fromage blanc aux pêches",
+                "Paris Brest"
             ]
         }
     },
     {
         "date": "Menu du mardi 5 septembre 2023",
         "Déjeuner": {
-            "Grillade": [
-                "STEAK HACHÉ",
-                "SAUCE À L ÉCHALOTE",
-                "HARICOTS VERTS",
-                "POMMES STEAKHOUSE"
+            "ENTREES": [
+                "Crudités et hors d’œuvre variés",
+                "Salade de boulgour à la menthe et tomate"
             ],
-            "Plat du jour": [
-                "SPAGHETTI MARINARA"
+            "MENU DU JOUR": [
+                "Jambalaya"
             ],
-            "Végétarien": [
-                "RISOTTO VERT AUX PETITS POIS ET COURGETTES"
+            "MENU VEGETARIEN": [
+                "Bruschetta aux légumes"
             ],
-            "Extension": [
-                "ESCALOPE VIENNOISE",
-                "BÂTONNIÈRE DE LÉGUMES",
-                "POMMES AU FOUR"
+            "POLE PATES": [
+                "Torti tricolore à la paysanne"
+            ],
+            "GRILL": [
+                "Echine de porc (Cuisson basse température)",
+                "Sauce froide libanaise"
+            ],
+            "DESSERTS": [
+                "Crème vanille",
+                "Compote pomme-abricot"
             ]
         }
     },
     {
         "date": "Menu du mercredi 6 septembre 2023",
         "Déjeuner": {
-            "Grillade": [
-                "LONGE DE PORC AUX POMMES ET AUX OIGNONS",
-                "CHOUX FLEURS À LA POLONAISE",
-                "GRATIN DIJONNAIS"
+            "ENTREES": [
+                "Crudités et hors d’œuvre variés",
+                "Salade de pommes de terre"
             ],
-            "Plat du jour": [
-                "WRAP DE DINDE TANDOORI",
-                "SALADE YUCATÁN"
+            "MENU DU JOUR": [
+                "Sauté de porc à la basquaise",
+                "Brocolis",
+                "Purée"
             ],
-            "Végétarien": [
-                "BURGER DE POMMES DE TERRE"
+            "MENU VEGETARIEN": [
+                "Pizza aux légumes"
             ],
-            "Extension": [
-                "COUSCOUS GARNI"
+            "POLE PATES": [
+                "Spaghetti bolognaise"
+            ],
+            "GRILL": [
+                "Merguez de poulet, sauce aigre douce à la pékinoise"
+            ],
+            "DESSERTS": [
+                "Ananas au sirop",
+                "Crème dessert chocolat-Melon"
             ]
         }
     },
     {
         "date": "Menu du jeudi 7 septembre 2023",
-        "Déjeuner": {
-            "Grillade": [
-                "FILET DE TILAPIA",
-                "SAUCE HOLLANDAISE",
-                "ÉPINARDS AUX CITRONS CONFITS",
-                "WEDGES ÉPICÉES"
-            ],
-            "Plat du jour": [
-                "COURGETTE FARCIE",
-                "SAUCE PROVENÇALE",
-                "RISOTTO"
-            ],
-            "Végétarien": [
-                "QUICHE TOMATE MOZZARELLA",
-                "SALADE DU MIDI"
-            ],
-            "Extension": [
-                "BURGER GARNI"
-            ]
-        }
+        "Déjeuner": {}
     },
     {
         "date": "Menu du vendredi 8 septembre 2023",
-        "Déjeuner": {
-            "Grillade": [
-                "POULET RÔTI AUX HERBES",
-                "FLAGEOLETS",
-                "POMMES NOISETTES"
-            ],
-            "Plat du jour": [
-                "WOK DE PORC À L AIGRE DOUCE"
-            ],
-            "Végétarien": [
-                "FALAFELS DE LENTILLES",
-                "SAUCE AU FROMAGE BLANC",
-                "KASHA"
-            ],
-            "Extension": [
-                "PASTA PARTY"
-            ]
-        }
+        "Déjeuner": {}
     },
     {
         "date": "Menu du lundi 11 septembre 2023",
-        "Déjeuner": {
-            "Grillade": [
-                "ESCALOPE VIENNOISE",
-                "GRATIN DE CHOUX FLEURS",
-                "POMMES RISSOLÉES"
-            ],
-            "Plat du jour": [
-                "CARI DE THON",
-                "ACHARD DE LÉGUMES",
-                "RIZ CRÉOLE"
-            ],
-            "Végétarien": [
-                "GALETTE DE SOJA, TOMATE ET BASILIC",
-                "COULIS NAPOLITAIN",
-                "PETIT ÉPEAUTRE"
-            ],
-            "Extension": [
-                "PENNE CARBONARA"
-            ]
-        }
+        "Déjeuner": {}
     },
     {
         "date": "Menu du mardi 12 septembre 2023",
-        "Déjeuner": {
-            "Grillade": [
-                "BEIGNETS DE CALAMARS",
-                "SAUCE AÏOLI",
-                "BÂTONNIÈRE DE LÉGUMES",
-                "POMMES DE TERRE AU SAFRAN"
-            ],
-            "Plat du jour": [
-                "SALADE DU MARAÎCHER"
-            ],
-            "Végétarien": [
-                "CHILI SIN CARNE"
-            ],
-            "Extension": [
-                "CORDON BLEU BOLOGNAISE",
-                "SAUCE PROVENÇALE",
-                "RISOTTO AUX LÉGUMES"
-            ]
-        }
+        "Déjeuner": {}
     },
     {
         "date": "Menu du mercredi 13 septembre 2023",
-        "Déjeuner": {
-            "Grillade": [
-                "AIGUILLETTES DE POULET PANÉ",
-                "BLETTES À LA CRÈME",
-                "WEDGES"
-            ],
-            "Plat du jour": [
-                "QUICHE AU CHÈVRE ET CHORIZO",
-                "SALADE COMPOSÉE"
-            ],
-            "Végétarien": [
-                "COUSCOUS VÉGÉTARIEN"
-            ],
-            "Extension": [
-                "CHICKEN BURGER",
-                "SALADE COMPOSÉE"
-            ]
-        }
+        "Déjeuner": {}
     },
     {
         "date": "Menu du jeudi 14 septembre 2023",
-        "Déjeuner": {
-            "Grillade": [
-                "CÔTE DE PORC",
-                "SAUCE CHARCUTIÈRE",
-                "CAROTTES AU CÉLERI",
-                "POMMES DE TERRE SAUTÉES"
-            ],
-            "Plat du jour": [
-                "RISOTTO FORESTIER AUX AIGUILLETTES DE POULET"
-            ],
-            "Végétarien": [
-                "PARMENTIER DE LÉGUMES",
-                "SALADE VERTE"
-            ],
-            "Extension": [
-                "SPAGHETTI BOLOGNAISE"
-            ]
-        }
+        "Déjeuner": {}
     },
     {
         "date": "Menu du vendredi 15 septembre 2023",
-        "Déjeuner": {
-            "Grillade": [
-                "HOKI À LA TOMATE",
-                "FONDUE DE POIREAUX",
-                "POMMES RÖSTIS"
-            ],
-            "Plat du jour": [
-                "WOK DE BŒUF À LA CITRONNELLE"
-            ],
-            "Végétarien": [
-                "CROUSTILLANT ASIATIQUE",
-                "SALADE KIMCHI",
-                "POMMES DE TERRE EN ROBE DES CHAMPS"
-            ],
-            "Extension": [
-                "STEAK HACHÉ DE VEAU",
-                "SAUCE CHASSEUR",
-                "PETITS POIS",
-                "RIZ"
-            ]
-        }
+        "Déjeuner": {}
     }
 ]
