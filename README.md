@@ -21,7 +21,7 @@
 A Docker file is provided to make the installation easier. You need to create configuration file name `.env` (you can use the `.env.example` file as a template) :
 ```ini
 # URL of the API
-HOST=
+HOST=0.0.0.0
 
 # URL of the ILLKIRCH menu website
 ILLKIRCH=
