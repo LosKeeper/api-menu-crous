@@ -18,7 +18,7 @@
 
 
 ## 🐋 Docker
-A Docker file is provided to make the installation easier. You need to create configuration file name `.env` (you can use the `.env.example` file as a template) :
+A Docker file is provided to make the installation easier. You **NEED** to create configuration file name `.env` (you can use the `.env.example` file as a template) :
 ```ini
 # URL of the API
 HOST=0.0.0.0
@@ -32,13 +32,17 @@ CRONENBOURG=
 # URL of the PAUL APPELL menu website
 PAUL_APPELL=
 ```
-To use it, you need to build the Docker image :
+
+To use it, you can build the Docker image an runing it :
 ```bash
 docker build -t api-menu-crous .
-```
-Then, you can run the Docker image :
-```bash
 docker run -p <WANTED_PORT>:5000 --env-file .env -d api-menu-crous
+```
+
+Or you can use the Docker image from the Docker Hub :
+```bash
+docker pull ghcr.io/loskeeper/api-menu-crous-docker:latest
+docker run -p <WANTED_PORT>:5000 --env-file .env -d ghcr.io/loskeeper/api-menu-crous-docker:latest
 ```
 
 ## 🔧 Normal Setup with Python
@@ -88,4 +92,3 @@ An example of the output for the `/illkirch` route can be find in the `example.j
 
 
 ## 🐞 Bugs and TODO
-- [x] Test the Dockerfile
