@@ -88,4 +88,4 @@ An example of the output for the `/illkirch` route can be find in the `example.j
 
 
 ## 🐞 Bugs and TODO
-- [ ] Test the Dockerfile
+- [x] Test the Dockerfile
