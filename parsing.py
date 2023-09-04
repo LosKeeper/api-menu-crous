@@ -43,11 +43,14 @@ def get_html(URL):
     return body
 
 
-def parser(htmlStr):
+def parserIllkirch(htmlStr):
 
     menus = []
 
     soup = BeautifulSoup(htmlStr, 'html.parser')
+
+    # Use to count the number of menu to parse the meal_foodies
+    i = 0
 
     # Get all the menu for each day
     for time in soup.find_all('time', class_='menu_date_title'):
@@ -59,10 +62,10 @@ def parser(htmlStr):
         }
 
         # Parse the menu the day
-        ul = soup.find('ul', class_='meal_foodies')
+        uls = soup.find_all('ul', class_='meal_foodies')
 
         # For each <li> tag
-        for li in ul.find_all('li'):
+        for li in uls[i].find_all('li'):
             # Get only the student menu wich start with "SALLE DES ETUDIANTS"
             if li.text.startswith('SALLE DES ETUDIANTS - '):
                 # Get the name of the pole before the <ul> tag
@@ -72,8 +75,49 @@ def parser(htmlStr):
                 # Add the menu to the JSON object inside all the <li> tag
                 for li2 in li.find_all('li'):
                     if li2.text != 'ou':
-                        menu[cur_menu][pole].append(li2.text)
+                        menu[cur_menu][pole].append(
+                            li2.text.replace('\'', ' '))
 
         menus.append(menu)
+        i += 1
+
+    return menus
+
+
+def parserCronenbourg(htmlStr):
+
+    menus = []
+
+    soup = BeautifulSoup(htmlStr, 'html.parser')
+
+    # Use to count the number of menu to parse the meal_foodies
+    i = 0
+
+    # Get all the menu for each day
+    for time in soup.find_all('time', class_='menu_date_title'):
+        cur_menu = soup.find('div', class_='meal_title').text
+        # Create a new JSON object for each day
+        menu = {
+            "date": time.text,
+            cur_menu: {}
+        }
+
+        # Parse the menu the day
+        uls = soup.find_all('ul', class_='meal_foodies')
+
+        # For each <li> tag
+        for li in uls[i].find_all('li'):
+            # Get only the student menu wich start with "SALLE DES ETUDIANTS"
+            if li.text.startswith('Grillade') or li.text.startswith('Plat du jour') or li.text.startswith('Végétarien') or li.text.startswith('Extension'):
+                # Get the name of the pole before the <ul> tag
+                pole = str(li).split('<ul')[0].split('>')[1]
+                menu[cur_menu][pole] = []
+
+                # Add the menu to the JSON object inside all the <li> tag
+                for li2 in li.find_all('li'):
+                    menu[cur_menu][pole].append(li2.text.replace('\'', ' '))
+
+        menus.append(menu)
+        i += 1
 
     return menus

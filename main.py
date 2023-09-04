@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, Response
 
 import os
 from dotenv import load_dotenv
@@ -22,7 +22,12 @@ def get_root():
 
 @app.get("/illkirch")
 def get_illkirch():
-    return parser(get_html('https://www.crous-strasbourg.fr/restaurant/resto-u-illkirch/'))
+    return str(parserIllkirch(get_html(os.getenv('ILLKIRCH')))).replace("'", "\""), 200, {'Content-Type': 'application/json; charset=utf-8'}
+
+
+@app.get("/cronenbourg")
+def get_cronenbourg():
+    return str(parserCronenbourg(get_html(os.getenv('CRONENBOURG')))).replace("'", "\""), 200, {'Content-Type': 'application/json; charset=utf-8'}
 
 
 Flask.run(app, host=os.getenv('HOST'), port=5000)
