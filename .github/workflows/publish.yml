@@ -6,14 +6,14 @@ jobs:
   publish-api-menu-crous-docker-image:
     runs-on: ubuntu-latest
 
-  steps:
-  - uses: actions/checkout@v2
+    steps:
+    - uses: actions/checkout@v2
 
-  - name: Build the API Menu Crous Docker image
-    run: |
-        echo $CR_PAT | docker login ghcr.io -u LosKeeper --password-stdin
-        docker build -t ghcr.io/loskeeper/api-menu-crous-docker:latest .
-        docker push ghcr.io/loskeeper/api-menu-crous-docker:latest
+    - name: Build the API Menu Crous Docker image
+      run: |
+          echo $CR_PAT | docker login ghcr.io -u LosKeeper --password-stdin
+          docker build -t ghcr.io/loskeeper/api-menu-crous-docker:latest .
+          docker push ghcr.io/loskeeper/api-menu-crous-docker:latest
 
-    env:
-      CR_PAT: ${{ secrets.CR_PAT }}
+      env:
+        CR_PAT: ${{ secrets.CR_PAT }}
