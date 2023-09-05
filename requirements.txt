@@ -3,3 +3,4 @@ certifi
 pycurl
 flask
 python-dotenv
+thread6
