@@ -92,4 +92,4 @@ An example of the output for the `/illkirch` route can be find in the `example.j
 
 
 ## 🐞 Bugs and TODO
-- [ ] Add threads to make the answer faster
+- [x] Add threads to make the answer faster
