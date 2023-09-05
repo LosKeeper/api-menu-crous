@@ -3,6 +3,9 @@ from flask import Flask, Response
 import os
 from dotenv import load_dotenv
 
+import threading
+import time
+
 from parsing import *
 
 load_dotenv()
@@ -37,4 +40,12 @@ def get_paulappell():
     return str(parserPaulAppell(get_html(os.getenv('PAUL_APPELL')))).replace("'", "\""), 200, {'Content-Type': 'application/json; charset=utf-8'}
 
 
-Flask.run(app, host=os.getenv('HOST'), port=5000)
+if __name__ == "__main__":
+    # Run the app in a separate thread
+    threading.Thread(target=app.run, kwargs={
+        'host': os.getenv('HOST'),
+        'port': 5000,
+        'debug': False
+    }).start()
+
+    # Run an another thread which parse the menu every 10 minutes into global variable
