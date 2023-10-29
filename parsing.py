@@ -1,8 +1,40 @@
 import pycurl
 import certifi
+import datetime
 from io import BytesIO
 
 from bs4 import BeautifulSoup
+
+
+def convert_to_date(menu_string):
+    # Split the string into words
+    words = menu_string.split()
+
+    # Create a dictionary to map French month names to numbers
+    month_dict = {
+        'janvier': 1,
+        'février': 2,
+        'mars': 3,
+        'avril': 4,
+        'mai': 5,
+        'juin': 6,
+        'juillet': 7,
+        'août': 8,
+        'septembre': 9,
+        'octobre': 10,
+        'novembre': 11,
+        'décembre': 12
+    }
+
+    # Extract the day and year from the string
+    day = int(words[3])
+    year = int(words[5])
+
+    # Convert the month name to a number
+    month = month_dict[words[4].lower()]
+
+    # Return the date
+    return datetime.date(year, month, day)
 
 
 def get_html(URL):
@@ -56,7 +88,8 @@ def parserIllkirch(htmlStr):
         cur_menu = soup.find('div', class_='meal_title').text
         # Create a new JSON object for each day
         menu = {
-            "date": time.text,
+            "title": time.text,
+            "date": str(convert_to_date(time.text)),
             cur_menu: {}
         }
 
@@ -97,7 +130,8 @@ def parserCronenbourg(htmlStr):
         cur_menu = soup.find('div', class_='meal_title').text
         # Create a new JSON object for each day
         menu = {
-            "date": time.text,
+            "title": time.text,
+            "date": str(convert_to_date(time.text)),
             cur_menu: {}
         }
 
@@ -135,7 +169,8 @@ def parserPaulAppell(htmlStr):
     for time in soup.find_all('time', class_='menu_date_title'):
         # Create a new JSON object for each day
         menu = {
-            "date": time.text
+            "title": time.text,
+            "date": str(convert_to_date(time.text))
         }
 
         for meal_type in soup.find_all('div', class_='meal_title'):
