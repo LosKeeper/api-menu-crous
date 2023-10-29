@@ -1,109 +1,184 @@
 [
     {
-        "date": "Menu du lundi 4 septembre 2023",
+        "title": "Menu du vendredi 27 octobre 2023",
+        "date": "2023-10-27",
         "Déjeuner": {
             "ENTREES": [
-                "Crudités et hors d’œuvres variés",
-                "Salade coleslow"
-            ],
-            "MENU DU JOUR": [
-                "Chili con Carné - Riz"
-            ],
-            "MENU VEGETARIEN": [
-                "Aiguillettes de blé",
-                "Céréales aux petits légumes"
-            ],
-            "POLE PATES": [
-                "Torti tricolore à la dinde et fenouil"
+                "Crudités variées",
+                "Salade  à la mimolette"
             ],
             "GRILL": [
-                "Cordon bleu de dinde - frites"
+                "Paupiettes de veau",
+                "Sauce suprême"
+            ],
+            "MENU VEGETARIEN": [
+                "Boulgour à la Provençale"
+            ],
+            "MENU DU JOUR": [
+                "Burger Végé ",
+                "Galettes de pommes de terre"
+            ],
+            "POLE PATES": [
+                "Pâtes à la carbonara"
             ],
             "DESSERTS": [
-                "Fromage blanc aux pêches",
-                "Paris Brest"
+                "Beignets",
+                "Fromage blanc aux fruits rouges"
             ]
         }
     },
     {
-        "date": "Menu du mardi 5 septembre 2023",
+        "title": "Menu du lundi 30 octobre 2023",
+        "date": "2023-10-30",
         "Déjeuner": {
             "ENTREES": [
-                "Crudités et hors d’œuvre variés",
-                "Salade de boulgour à la menthe et tomate"
-            ],
-            "MENU DU JOUR": [
-                "Jambalaya"
-            ],
-            "MENU VEGETARIEN": [
-                "Bruschetta aux légumes"
-            ],
-            "POLE PATES": [
-                "Torti tricolore à la paysanne"
+                "Crudités variées",
+                "Salade coleslaw"
             ],
             "GRILL": [
-                "Echine de porc (Cuisson basse température)",
-                "Sauce froide libanaise"
+                "menu non communiqué"
+            ],
+            "MENU VEGETARIEN": [
+                "Chili sin carné",
+                "Riz"
+            ],
+            "MENU DU JOUR": [
+                "Escalope Viennoise",
+                "Poêlée de Potatoes et légumes"
+            ],
+            "POLE PATES": [
+                "menu non communiqué"
             ],
             "DESSERTS": [
-                "Crème vanille",
-                "Compote pomme-abricot"
+                "Beignet à la framboise",
+                "Salade de fruits"
             ]
         }
     },
     {
-        "date": "Menu du mercredi 6 septembre 2023",
+        "title": "Menu du mardi 31 octobre 2023",
+        "date": "2023-10-31",
         "Déjeuner": {
             "ENTREES": [
-                "Crudités et hors d’œuvre variés",
-                "Salade de pommes de terre"
-            ],
-            "MENU DU JOUR": [
-                "Sauté de porc à la basquaise",
-                "Brocolis",
-                "Purée"
-            ],
-            "MENU VEGETARIEN": [
-                "Pizza aux légumes"
-            ],
-            "POLE PATES": [
-                "Spaghetti bolognaise"
+                "Crudités variées",
+                "Salade de riz au thon"
             ],
             "GRILL": [
-                "Merguez de poulet, sauce aigre douce à la pékinoise"
+                "menu non communiqué"
+            ],
+            "MENU VEGETARIEN": [
+                "Morbiflette"
+            ],
+            "MENU DU JOUR": [
+                "Tajine de poulet au citron",
+                "Carottes",
+                "Boulgour"
+            ],
+            "POLE PATES": [
+                "menu non communiqué"
             ],
             "DESSERTS": [
-                "Ananas au sirop",
-                "Crème dessert chocolat-Melon"
+                "Fromage blanc à l ananas",
+                "Liégeois au café"
             ]
         }
     },
     {
-        "date": "Menu du jeudi 7 septembre 2023",
+        "title": "Menu du mercredi 1 novembre 2023",
+        "date": "2023-11-01",
+        "Déjeuner": {
+            "ENTREES": [
+                "menu non communiqué"
+            ],
+            "GRILL": [
+                "menu non communiqué"
+            ],
+            "MENU VEGETARIEN": [
+                "menu non communiqué"
+            ],
+            "MENU DU JOUR": [
+                "menu non communiqué"
+            ],
+            "POLE PATES": [
+                "menu non communiqué"
+            ],
+            "DESSERTS": [
+                "menu non communiqué"
+            ]
+        }
+    },
+    {
+        "title": "Menu du jeudi 2 novembre 2023",
+        "date": "2023-11-02",
+        "Déjeuner": {
+            "ENTREES": [
+                "Crudités variées",
+                "Salade aux trois fromages"
+            ],
+            "GRILL": [
+                "menu non communiqué"
+            ],
+            "MENU VEGETARIEN": [
+                "Galette de soja à la provençale",
+                "Bâtonnière de légumes"
+            ],
+            "MENU DU JOUR": [
+                "Couscous"
+            ],
+            "POLE PATES": [
+                "menu non communiqué"
+            ],
+            "DESSERTS": [
+                "Crêpes chocolat",
+                "Ou",
+                "Compote de poires"
+            ]
+        }
+    },
+    {
+        "title": "Menu du vendredi 3 novembre 2023",
+        "date": "2023-11-03",
+        "Déjeuner": {
+            "ENTREES": [
+                "Crudités variées",
+                "Salade de cervelas-Gruyère"
+            ],
+            "GRILL": [
+                "menu non communiqué"
+            ],
+            "MENU VEGETARIEN": [
+                "Wok de nouilles aux légumes"
+            ],
+            "MENU DU JOUR": [
+                "Poisson meunière-sauce rémoulade",
+                "Riz aux légumes"
+            ],
+            "POLE PATES": [
+                "menu non communiqué"
+            ],
+            "DESSERTS": [
+                "Compote de pêches"
+            ]
+        }
+    },
+    {
+        "title": "Menu du lundi 6 novembre 2023",
+        "date": "2023-11-06",
         "Déjeuner": {}
     },
     {
-        "date": "Menu du vendredi 8 septembre 2023",
+        "title": "Menu du mardi 7 novembre 2023",
+        "date": "2023-11-07",
         "Déjeuner": {}
     },
     {
-        "date": "Menu du lundi 11 septembre 2023",
+        "title": "Menu du mercredi 8 novembre 2023",
+        "date": "2023-11-08",
         "Déjeuner": {}
     },
     {
-        "date": "Menu du mardi 12 septembre 2023",
-        "Déjeuner": {}
-    },
-    {
-        "date": "Menu du mercredi 13 septembre 2023",
-        "Déjeuner": {}
-    },
-    {
-        "date": "Menu du jeudi 14 septembre 2023",
-        "Déjeuner": {}
-    },
-    {
-        "date": "Menu du vendredi 15 septembre 2023",
+        "title": "Menu du jeudi 9 novembre 2023",
+        "date": "2023-11-09",
         "Déjeuner": {}
     }
 ]

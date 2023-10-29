@@ -53,8 +53,13 @@ def fill_menu():
         paulappell = str(parserPaulAppell(get_html(os.getenv('PAUL_APPELL')))).replace(
             "'", "\""), 200, {'Content-Type': 'application/json; charset=utf-8'}
 
+        print("Menu updated")
+
         # Wait 10 minutes
         time.sleep(600)
+        illkirch = ""
+        cronenbourg = ""
+        paulappell = ""
 
 
 if __name__ == "__main__":
