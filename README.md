@@ -73,6 +73,12 @@ CRONENBOURG=
 
 # URL of the PAUL APPELL menu website
 PAUL_APPELL=
+
+# URL of the Esplanade menu website
+ESPLANADE=
+
+# URL of the Gallia menu website
+GALLIA=
 ```
 
 ## 🚀 Launch with Python
