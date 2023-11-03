@@ -99,6 +99,8 @@ To use it, you need to connect to the API URL you have configured in the `.env` 
 - `/illkirch` : Display the menu of the ILLKIRCH restaurant
 - `/cronenbourg` : Display the menu of the CRONENBOURG restaurant
 - `/paul-appell` : Display the menu of the PAUL APPELL restaurant
+- `/esplanade` : Display the menu of the ESPLANADE restaurant
+- `/gallia` : Display the menu of the GALLIA restaurant
 
 An example of the output for the `/illkirch` route can be find in the `example.json` file.
 
